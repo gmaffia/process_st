@@ -45,7 +45,7 @@ angular.module('process').directive('wistiaUploader', ['$sce', function($sce) {
           scope.isUploading = false;
           scope.uploadProgress = 0;
           scope.displayVideo = true;
-          scope.videoSource = "http://fast.wistia.net/embed/iframe/" + data.result.hashed_id;
+          scope.videoSource = "//fast.wistia.net/embed/iframe/" + data.result.hashed_id;
           element.find('#preview').append('<iframe src="' + scope.videoSource + '"></iframe>');
         });
       })
