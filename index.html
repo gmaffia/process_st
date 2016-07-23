@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Process.st test</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="app/main.css">
+
+  </head>
+  <body>
+    <div class="container" ng-app="process">
+      <div class="header clearfix">
+        <h3 class="text-muted">Video Upload</h3>
+      </div>
+      <div class="content clearfix" ui-view>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-load-image/js/load-image.all.min.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-file-upload/js/jquery.fileupload-image.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
+    <script type="text/javascript" src="bower_components/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
+    <script type="text/javascript" src="http://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+    <!-- include angular app files -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="app/directives/wistia_uploader_directive.js"></script>
+  </body>
+</html>

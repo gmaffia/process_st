@@ -1,0 +1,23 @@
+<div class="wistia-uploader">
+  <div class="buttons">
+    <span class="btn btn-success fileinput-button">
+      <i class="glyphicon glyphicon-plus"></i>
+      <span>Choose Video</span>
+      <input type="file">
+    </span>
+  </div>
+
+  <div class="progress" ng-show="isUploading">
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{uploadProgress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{uploadProgress}}%;">
+      <span>Your file is uploading: {{uploadProgress}}% Complete</span>
+    </div>
+  </div>
+
+  <div class="error" ng-show="uploadFailed">
+    <div class="alert alert-danger" role="alert">{{uploadFailed}}</div>
+  </div>
+
+  <div id="preview" ng-show="displayVideo">
+  </div>
+</div>
+
